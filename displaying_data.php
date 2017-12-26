@@ -1,8 +1,8 @@
 <?php
-$db_host = 'sandhya.web.id'; // Server Name
-$db_user = 'sandhyaw_wp553'; // Username
+$db_host = 'sql146.main-hosting.eu'; // Server Name
+$db_user = 'u155514313_trio'; // Username
 $db_pass = 'satrioyuli1988'; // Password
-$db_name = 'sandhyaw_wp553'; // Database Name
+$db_name = 'u155514313_ta'; // Database Name
 
 $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 if (!$conn) {
@@ -113,6 +113,8 @@ if (!$query) {
 				<th>KELEMBAPAN</th>
 				<th>ARAH ANGIN</th>
 				<th>KECEPATAN ANGIN</th>
+				<th>TANGGAL</th>
+				<th>WAKTU</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -128,6 +130,8 @@ if (!$query) {
 					<td>'.$row['hum'].'</td>
 					<td>'.$row['arah'].'</td>
 					<td>'.$row['kecepatan'].'</td>
+					<td>'.$row['date'].'</td>
+					<td>'.$row['time'].'</td>
 				</tr>';
 		}?>
 		</tbody>
